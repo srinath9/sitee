@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="nivo-slider.css" type="text/css" media="screen" />
     <script type="text/javascript" src="jquery.nivo.slider.js"></script>
     <script src="js/prefixfree.min.js"></script>
-   <script type="text/javascript" src="my_script.js"></script>
+   
 	<style type="text/css">
 		*
 		{
@@ -148,22 +148,26 @@
 		{
 			margin-left:200px;
 			float:left;
-			margin-top:-90px;
+			margin-top:40px;
+			color:#FFB107;
 		}
 	#subcontent2
 		{
-			margin-left:200px;
-			margin-top:20px;
-			float:left;
+			margin-right:200px;
+			margin-top:40px;
+			float:right;
+			width:700px;
+		}
+	#clear
+		{
 			clear:both;
-			width:550px;
 		}
 	#subcontent3
 		{
 			float:right;
 			margin-right:200px;
 			margin-top:30px;
-			background-color:#F74941;
+			background-color:#0072C6;
 			width:220px;
 			height:50px;
 			border-radius:10px;
@@ -282,12 +286,20 @@
        outline-offset: 0;
        color: #404040;
     }
-    .photo
+    #box9
+	{
+		margin-top:6px;
+		width:200px;
+		height:5px;
+		border-radius:10px;
+		background-color:#A23833;
+	}
+	
+.photo
 		{
 			padding:30px;
 			float:right;
 		}
-	
  #lo
  {
   font-family:'Lucida Grande', Tahoma, Verdana, sans-serif;
@@ -323,14 +335,39 @@ font-family: play, Times, "Play", serif;
 opacity: .85;
 cursor: pointer;
 }
-#box9
-	{
-		margin-top:6px;
-		width:200px;
-		height:5px;
-		border-radius:10px;
-		background-color:#A23833;
-	}
+/* 
+
+====== Zoom-out effect ======
+
+*/
+.mfp-zoom-out {
+  /* start state */
+  /* animate in */
+  /* animate out */
+}
+.mfp-zoom-out .mfp-with-anim {
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+  transform: scale(1.3);
+}
+.mfp-zoom-out.mfp-bg {
+  opacity: 0;
+  transition: all 0.3s ease-out;
+}
+.mfp-zoom-out.mfp-ready .mfp-with-anim {
+  opacity: 1;
+  transform: scale(1);
+}
+.mfp-zoom-out.mfp-ready.mfp-bg {
+  opacity: 0.8;
+}
+.mfp-zoom-out.mfp-removing .mfp-with-anim {
+  transform: scale(1.3);
+  opacity: 0;
+}
+.mfp-zoom-out.mfp-removing.mfp-bg {
+  opacity: 0;
+}
 /* 
 
 ====== 3d unfold ======
@@ -368,7 +405,8 @@ cursor: pointer;
 .mfp-3d-unfold.mfp-removing.mfp-bg {
   opacity: 0;
 }
-/*
+/* 
+
 ====== Move-from-top effect ======
 
 */
@@ -403,39 +441,7 @@ cursor: pointer;
 .mfp-move-from-top.mfp-removing.mfp-bg {
   opacity: 0;
 }
-/* 
 
-====== Zoom-out effect ======
-
-*/
-.mfp-zoom-out {
-  /* start state */
-  /* animate in */
-  /* animate out */
-}
-.mfp-zoom-out .mfp-with-anim {
-  opacity: 0;
-  transition: all 0.3s ease-in-out;
-  transform: scale(1.3);
-}
-.mfp-zoom-out.mfp-bg {
-  opacity: 0;
-  transition: all 0.3s ease-out;
-}
-.mfp-zoom-out.mfp-ready .mfp-with-anim {
-  opacity: 1;
-  transform: scale(1);
-}
-.mfp-zoom-out.mfp-ready.mfp-bg {
-  opacity: 0.8;
-}
-.mfp-zoom-out.mfp-removing .mfp-with-anim {
-  transform: scale(1.3);
-  opacity: 0;
-}
-.mfp-zoom-out.mfp-removing.mfp-bg {
-  opacity: 0;
-}
 
 	</style>
     <script type="text/javascript">
@@ -491,28 +497,41 @@ cursor: pointer;
 	<div id="strip2"></div>
 	<div id="content">
 	<div id="content-group">
-		
-		<div id="subcontent2">
-			<h3>Our Mission</h3>
-			<br>
-			<p>"Change Yourself" is a student-run social enterprise which aims at involving students in creating positive social impact. Mission . To provide a platform to the energetic youth of India through which they can bring a change in the society and improve themselves simultaneously. .	To create young leaders with vision and energy for the nation as well as themselves. .	To trendify the education of India by involving students in this field. .	To spread awareness among the people about the general world issues related to economy, science, law, environment, history, sports, polity and business. .	To ensure that any idea which can create a significant impact does not go waste just because that person finds himself alone in his pursuit.</p><p> Description This organisation is run by students of some of the best institutions in the country like IITs, AIIMS, NLIUs, NITs and other institutions of high repute. It centrally works from IIT Kharagpur. However, it is open to people from all regions and age.</p>
+		<div ID="clear">
+			<div id="subcontent1">
+				<h4>Career Counselling</h4>
+			</div>
+			<div id="subcontent2">
+				The Content is coming soon.<br>
+				The thumb is pretty fine and I am ready for the next game. We didn't start off well with our bowling especially on this track, which offered some extra bounce. The bowling department let us down, but our batting also didn't click. We can't blame this on the lack of practice games as we knew we had exactly how much time we had. One or two days extra could have helped. All credit to South Africa today. We let ourselves down as we didn't get off to a positive start. I was disappointed with our bowling especially with the new ball. Shami and the spinners bowled in the right areas, with rest of the bowlers failed to deliver. We can't rely on reverse swing in these conditions. I am looking forward to the next 2 games. Hoping for the best.
+			</div>
 		</div>
-		<div id="subcontent3">
-			<div id="inline-popups2">
-    				<a href="#campuss" data-effect="mfp-zoom-out"><p class="campus">Campus Ambassador</p></a>
-  			</div>
-			
+		<div ID="clear">
+			<div id="subcontent1">
+				<h4>Time Management</h4>
+			</div>
+			<div id="subcontent2">
+				The Content is coming soon.<br>
+				The thumb is pretty fine and I am ready for the next game. We didn't start off well with our bowling especially on this track, which offered some extra bounce. The bowling department let us down, but our batting also didn't click. We can't blame this on the lack of practice games as we knew we had exactly how much time we had. One or two days extra could have helped. All credit to South Africa today. We let ourselves down as we didn't get off to a positive start. I was disappointed with our bowling especially with the new ball. Shami and the spinners bowled in the right areas, with rest of the bowlers failed to deliver. We can't rely on reverse swing in these conditions. I am looking forward to the next 2 games. Hoping for the best.
+			</div>
 		</div>
-		<div id="subcontent4">
-			<H3>Up Coming Events</H3>
-			<br>
-			<marquee direction="up" onmouseover=this.stop() onmouseout=this.start() scrollamount="1" scrolldelay="40" width="250" >
-				<h5>Event1</h5>
-				<p>This is the best event change your self is organising.date of the event:20/1/2014</p>
-				<br>
-				<h5>Event2</h5>
-				<p>This is the best event change your self is organising.date of the event:20/1/2014</p>
-			</marquee>
+		<div ID="clear">
+			<div id="subcontent1">
+				<h4>Robotics</h4>
+			</div>
+			<div id="subcontent2">
+				The Content is coming soon.<br>
+				The thumb is pretty fine and I am ready for the next game. We didn't start off well with our bowling especially on this track, which offered some extra bounce. The bowling department let us down, but our batting also didn't click. We can't blame this on the lack of practice games as we knew we had exactly how much time we had. One or two days extra could have helped. All credit to South Africa today. We let ourselves down as we didn't get off to a positive start. I was disappointed with our bowling especially with the new ball. Shami and the spinners bowled in the right areas, with rest of the bowlers failed to deliver. We can't rely on reverse swing in these conditions. I am looking forward to the next 2 games. Hoping for the best.
+			</div>
+		</div>
+		<div ID="clear">
+			<div id="subcontent1">
+				<h4>Digging The Internet</h4>
+			</div>
+			<div id="subcontent2">
+				The Content is coming soon.<br>
+				The thumb is pretty fine and I am ready for the next game. We didn't start off well with our bowling especially on this track, which offered some extra bounce. The bowling department let us down, but our batting also didn't click. We can't blame this on the lack of practice games as we knew we had exactly how much time we had. One or two days extra could have helped. All credit to South Africa today. We let ourselves down as we didn't get off to a positive start. I was disappointed with our bowling especially with the new ball. Shami and the spinners bowled in the right areas, with rest of the bowlers failed to deliver. We can't rely on reverse swing in these conditions. I am looking forward to the next 2 games. Hoping for the best.
+			</div>
 		</div>
 	</div>
 	</div>
@@ -541,21 +560,7 @@ cursor: pointer;
 
   
 
-<div id="campuss" class="white-popup mfp-with-anim mfp-hide">
-	<div id="signup">
-			<span id="lo">Signin</span>
-			<div id="box2"></div>
-			<form id="myform" action="process.php" method="post" onsubmit="return validate();">
-					<input type="text"  class="rule" name="fullname" id="fullname" placeholder="Enter Fullname"/><span id="full"></span><br>
-					<input type="text"  class="rule"  name="username" id="username" placeholder="Enter Username"/><span id="user"></span><br>
-					<input type="password"  class="rule"  name="password" id="password" placeholder="Enter Password"/><span id="pass"></span><br>
-					<input type="password"  class="rule"  name="conformpassword" id="conform" placeholder="Enter Conform Password"/><span id="conf"></span><br>
-					<input type="text"  class="rule"  name="email" id="email" placeholder="Enter Email id"/><span id="email"></span><br>
-					<button id="submit">Signin</button>
-			</form>
-			<div id="ack"></div>
-			</div>
-</div>
+<div id="campuss" class="white-popup mfp-with-anim mfp-hide">You may put any HTML here. This is dummy copy. It is not meant to be read. It has been placed here solely to demonstrate the look and feel of finished, typeset text. Only for show. He who searches for meaning here will be sorely disappointed.</div>
 <div id="contact" class="white-popup2 mfp-with-anim mfp-hide">
 	<div id="contacts3">
 				<h4>Contacts</h4>
@@ -594,7 +599,7 @@ cursor: pointer;
 	</form>
 </div>
  <script src='http://dimsemenov-static.s3.amazonaws.com/dist/jquery.magnific-popup.min.js'></script>
-   <script src="js/index.js"></script>
+   <script src="index.js"></script>
   
 </body>
 </html>

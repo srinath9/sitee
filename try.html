@@ -10,8 +10,7 @@
     <link rel="stylesheet" href="bar.css" type="text/css" media="screen" />
     <link rel="stylesheet" href="nivo-slider.css" type="text/css" media="screen" />
     <script type="text/javascript" src="jquery.nivo.slider.js"></script>
-    <script src="js/prefixfree.min.js"></script>
-   <script type="text/javascript" src="my_script.js"></script>
+   
 	<style type="text/css">
 		*
 		{
@@ -134,15 +133,14 @@
 		}
 	.circle
 		{
-			
 			 width: 150px;
 			height: 150px;
 			-moz-border-radius: 90px;
 			-webkit-border-radius: 90px;
 			border-radius: 90px;
 			border-style:solid;
-			border-width:2px;
-			border-color:#282828;
+			border-width:3px;
+			border-color:#FDFDFD;
 		}
 	#subcontent1
 		{
@@ -163,7 +161,7 @@
 			float:right;
 			margin-right:200px;
 			margin-top:30px;
-			background-color:#F74941;
+			background-color:#0072C6;
 			width:220px;
 			height:50px;
 			border-radius:10px;
@@ -230,16 +228,6 @@
 			  max-width: 400px;
 			  margin: 0 auto;
 		}
-	.white-popup2
-		{
-			  position: relative;
-			  background-color: #FFF;
-			  height:auto;
-			  width:750px;
-			  margin: 0 auto;
-			  padding:10px;
-			  border-radius:10px;
-		}
 	.white-popup1 
 		{
 			  position: relative;
@@ -282,11 +270,6 @@
        outline-offset: 0;
        color: #404040;
     }
-    .photo
-		{
-			padding:30px;
-			float:right;
-		}
 	
  #lo
  {
@@ -323,52 +306,41 @@ font-family: play, Times, "Play", serif;
 opacity: .85;
 cursor: pointer;
 }
-#box9
-	{
-		margin-top:6px;
-		width:200px;
-		height:5px;
-		border-radius:10px;
-		background-color:#A23833;
-	}
 /* 
 
-====== 3d unfold ======
+====== Zoom effect ======
 
 */
-.mfp-3d-unfold {
+.mfp-zoom-in {
   /* start state */
   /* animate in */
   /* animate out */
 }
-.mfp-3d-unfold .mfp-content {
-  perspective: 2000px;
-}
-.mfp-3d-unfold .mfp-with-anim {
+.mfp-zoom-in .mfp-with-anim {
   opacity: 0;
-  transition: all 0.3s ease-in-out;
-  transform-style: preserve-3d;
-  transform: rotateY(-60deg);
+  transition: all 0.2s ease-in-out;
+  transform: scale(0.8);
 }
-.mfp-3d-unfold.mfp-bg {
+.mfp-zoom-in.mfp-bg {
   opacity: 0;
-  transition: all 0.5s;
+  transition: all 0.3s ease-out;
 }
-.mfp-3d-unfold.mfp-ready .mfp-with-anim {
+.mfp-zoom-in.mfp-ready .mfp-with-anim {
   opacity: 1;
-  transform: rotateY(0deg);
+  transform: scale(1);
 }
-.mfp-3d-unfold.mfp-ready.mfp-bg {
+.mfp-zoom-in.mfp-ready.mfp-bg {
   opacity: 0.8;
 }
-.mfp-3d-unfold.mfp-removing .mfp-with-anim {
-  transform: rotateY(60deg);
+.mfp-zoom-in.mfp-removing .mfp-with-anim {
+  transform: scale(0.8);
   opacity: 0;
 }
-.mfp-3d-unfold.mfp-removing.mfp-bg {
+.mfp-zoom-in.mfp-removing.mfp-bg {
   opacity: 0;
 }
-/*
+/* 
+
 ====== Move-from-top effect ======
 
 */
@@ -403,39 +375,6 @@ cursor: pointer;
 .mfp-move-from-top.mfp-removing.mfp-bg {
   opacity: 0;
 }
-/* 
-
-====== Zoom-out effect ======
-
-*/
-.mfp-zoom-out {
-  /* start state */
-  /* animate in */
-  /* animate out */
-}
-.mfp-zoom-out .mfp-with-anim {
-  opacity: 0;
-  transition: all 0.3s ease-in-out;
-  transform: scale(1.3);
-}
-.mfp-zoom-out.mfp-bg {
-  opacity: 0;
-  transition: all 0.3s ease-out;
-}
-.mfp-zoom-out.mfp-ready .mfp-with-anim {
-  opacity: 1;
-  transform: scale(1);
-}
-.mfp-zoom-out.mfp-ready.mfp-bg {
-  opacity: 0.8;
-}
-.mfp-zoom-out.mfp-removing .mfp-with-anim {
-  transform: scale(1.3);
-  opacity: 0;
-}
-.mfp-zoom-out.mfp-removing.mfp-bg {
-  opacity: 0;
-}
 
 	</style>
     <script type="text/javascript">
@@ -464,7 +403,7 @@ cursor: pointer;
 			<a href="#" class="link">Blog</a>
 			<a href="#" class="link">Forums</a>
 			<div  id="inline-popups1" class="link2">
-				<a href="#contact" data-effect="mfp-3d-unfold" class="link">Contact</a>
+				<a href="#contact" data-effect="mfs-zoom-in" class="link">Contact</a>
 			</div>
 			<div id="inline-popups3"class="link3">
 				<a href="#register" data-effect="mfp-move-from-top" class="link">Register</a>
@@ -478,7 +417,7 @@ cursor: pointer;
 		<div id="wrapper">
         <div class="slider-wrapper theme-default">
             <div id="slider" class="nivoSlider">
-                <img src="x1.jpg" data-thumb="x1.jpg" alt="" />
+                <img src="toystory.jpg" data-thumb="toystory.jpg" alt="" />
                 <img src="up.jpg" data-thumb="up.jpg" alt=""  />
                 <img src="walle.jpg" data-thumb="walle.jpg" alt="" />
                 <img src="nemo.jpg" data-thumb="nemo.jpg" alt=""  />
@@ -499,7 +438,7 @@ cursor: pointer;
 		</div>
 		<div id="subcontent3">
 			<div id="inline-popups2">
-    				<a href="#campuss" data-effect="mfp-zoom-out"><p class="campus">Campus Ambassador</p></a>
+    				<a href="#campuss" data-effect="mfp-zoom-in"><p class="campus">Campus Ambassador</p></a>
   			</div>
 			
 		</div>
@@ -526,7 +465,7 @@ cursor: pointer;
 			<a href="#" class="link">Events</a>
 			<a href="#" class="link">Blog</a>
 			<div  id="inline-popups4" class="link2">
-				<a href="#contact" data-effect="mfp-3d-unfold" class="link">Contact</a>
+				<a href="#contact" data-effect="mfs-zoom-in" class="link">Contact</a>
 			</div>
 			<div id="inline-popups5"class="link3">
 				<a href="#register" data-effect="mfp-move-from-top" class="link">Register</a>
@@ -541,49 +480,8 @@ cursor: pointer;
 
   
 
-<div id="campuss" class="white-popup mfp-with-anim mfp-hide">
-	<div id="signup">
-			<span id="lo">Signin</span>
-			<div id="box2"></div>
-			<form id="myform" action="process.php" method="post" onsubmit="return validate();">
-					<input type="text"  class="rule" name="fullname" id="fullname" placeholder="Enter Fullname"/><span id="full"></span><br>
-					<input type="text"  class="rule"  name="username" id="username" placeholder="Enter Username"/><span id="user"></span><br>
-					<input type="password"  class="rule"  name="password" id="password" placeholder="Enter Password"/><span id="pass"></span><br>
-					<input type="password"  class="rule"  name="conformpassword" id="conform" placeholder="Enter Conform Password"/><span id="conf"></span><br>
-					<input type="text"  class="rule"  name="email" id="email" placeholder="Enter Email id"/><span id="email"></span><br>
-					<button id="submit">Signin</button>
-			</form>
-			<div id="ack"></div>
-			</div>
-</div>
-<div id="contact" class="white-popup2 mfp-with-anim mfp-hide">
-	<div id="contacts3">
-				<h4>Contacts</h4>
-				<div id="box9"></div>
-				<table>
-					<tr style="text-align:center;">
-					<td class="photo">
-						<img src="1.jpg" class="circle">
-						<h4>Bhogesh Srivasthava</h4>
-						<p>12bhogesh@gmail.com</p>
-						<p>08967754309</p>
-					</td>
-					<td class="photo">
-						<img src="1.jpg" class="circle">
-						<h4>Bhogesh Srivasthava</h4>
-						<p>12bhogesh@gmail.com</p>
-						<p>08967754309</p>
-					</td>
-					<td class="photo">
-						<img src="1.jpg" class="circle">
-						<h4>Bhogesh Srivasthava</h4>
-						<p>12bhogesh@gmail.com</p>
-						<p>08967754309</p>
-					</td>
-					</tr>
-				</table>
-	</div>
-</div>
+<div id="campuss" class="white-popup mfp-with-anim mfp-hide">You may put any HTML here. This is dummy copy. It is not meant to be read. It has been placed here solely to demonstrate the look and feel of finished, typeset text. Only for show. He who searches for meaning here will be sorely disappointed.</div>
+<div id="contact" class="white-popup mfp-with-anim mfp-hide">You may put any HTML here. This is dummy copy. It is not meant to be read. It has been placed here solely to demonstrate the look and feel of finished, typeset text. Only for show. He who searches for meaning here will be sorely disappointed.</div>
 <div id="register" class="white-popup1 mfp-with-anim mfp-hide">
 	<span id="lo">Register</span>
 	<div id="box2"></div>
@@ -594,7 +492,7 @@ cursor: pointer;
 	</form>
 </div>
  <script src='http://dimsemenov-static.s3.amazonaws.com/dist/jquery.magnific-popup.min.js'></script>
-   <script src="js/index.js"></script>
+   <script src="index.js"></script>
   
 </body>
 </html>
